@@ -58,7 +58,6 @@
 
 // let a = 12;
 
-
 // while (a<=30) {
 //     console.log(a);
 //     a++;
@@ -67,8 +66,7 @@
 // do while
 
 // let a = 12;
-
 // do {
 //   console.log(a);
 //   a++;
-// } while (a > 20);
+// } while (a < 20);
