@@ -51,36 +51,40 @@
 //     console.log(error);
 //   });
 
-// var loading = false;
-// const promiseFour = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     let isError = true;
+var loading = false;
+const promiseFour = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let isError = false;
 
-//     if (!isError) {
-//       resolve({ userName: "Akshay", age: 22 });
-//     } else {
-//       reject("Error aa gyi");
-//     }
-//   }, 1000);
-// });
+    if (!isError) {
+      resolve({ userName: "Akshay", age: 22 });
+    } else {
+      reject("Error aa gyi");
+    }
+  }, 1000);
+});
 
-// promiseFour
-//   .then((data) => {
-//     console.log(data);
-//     loading = true;
-//     return data.userName;
-//   })
-//   .then((username) => {
-//     loading = true;
-//     console.log(username);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   })
-//   .finally(() => {
-//     console.log("Thank you !");
-//     loading = false;
-//   });
+promiseFour
+  .then((data) => {
+    console.log(data);
+    loading = true;
+    return data;
+  })
+  .then((data) => {
+    loading = true;
+    console.log(data.userName);
+    return data.age;
+  })
+  .then((age) => {
+    console.log(age);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log("Thank you !");
+    loading = false;
+  });
 
 // const promiseFive = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -123,16 +127,16 @@
 
 // fetchData();
 
-async function fetchData() {
-  try {
-    const response = await fetch("https://localhost:3000/users/post");
-    const data = await response.json();
+// async function fetchData() {
+//   try {
+//     const response = await fetch("https://localhost:3000/users/post");
+//     const data = await response.json();
 
-    console.log(data);
-  } catch (e) {
-    console.log("Error");
-    alert("Error")
-  }
-}
+//     console.log(data);
+//   } catch (e) {
+//     console.log("Error");
+//     alert("Error")
+//   }
+// }
 
-fetchData();
+// fetchData();
