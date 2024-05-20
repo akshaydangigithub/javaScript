@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background: linear-gradient(to top left, #b185ff, #8339fe, #8339fe, #b185ff);
+}
+.bottom_hero {
+  background: linear-gradient(to right, #fff, #8439fe24, #8439fe56, #fff);
+}
+
+.hero_img_animation {
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
