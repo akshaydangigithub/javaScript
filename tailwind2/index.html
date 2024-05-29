@@ -8,6 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -96,9 +101,7 @@
         </div>
       </section>
       <!-- bottom -->
-      <div
-        class="h-36 px-10 flex items-center gap-12 w-full bottom_hero"
-      >
+      <div class="h-36 px-10 flex items-center gap-12 w-full bottom_hero">
         <img
           class="h-20 object-cover"
           src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65e8538315c3e5cb9a8e8477_Logo2.svg"
@@ -116,8 +119,383 @@
         />
       </div>
 
+      <!-- section 2 -->
+
+      <section class="bg-[#FAF8FB] relative w-full px-10 py-20">
+        <div class="flex relative items-center gap-6">
+          <img
+            class="h-12 w-12 object-cover"
+            src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef42d4a8bad78231306f85_la_gem-solid.svg"
+            alt=""
+          />
+          <h1 class="text-[#7056A3] text-3xl font-bold">Our Best Programs</h1>
+        </div>
+        <div
+          class="mt-10 shadow-2xl shadow-purple-200 rounded-[2rem] border-[18px] border-white w-full bg-[#8339FE] grid grid-cols-4"
+        >
+          <div
+            class="flex group duration-200 items-center py-16 px-5 justify-center flex-col gap-6 rounded-2xl hover:bg-yellow-500"
+          >
+            <img
+              class="h-12 w-12 object-cover duration-200 block group-hover:hidden"
+              src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef42d407b00f06aec5a9a0_la_gem-solid-1.svg"
+              alt=""
+            />
+            <h1
+              class="text-center block duration-200 group-hover:hidden text-white font-bold text-[23px] leading-none"
+            >
+              Our Customized Meal Planning Program
+            </h1>
+            <p
+              class="text-center text-md duration-200 hidden group-hover:block"
+            >
+              Discover the joy of personalized meal plans meticulously crafted
+              to align with your dietary preferences, health objectives, and
+              nutritional requirements.
+            </p>
+          </div>
+          <div
+            class="flex group duration-200 items-center py-16 px-5 justify-center flex-col gap-6 rounded-2xl hover:bg-yellow-500"
+          >
+            <img
+              class="h-12 w-12 object-cover duration-200 block group-hover:hidden"
+              src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65f82b9fa8ea0cbe4c5696e9_la_gem-solidmen.png"
+              alt=""
+            />
+            <h1
+              class="text-center block duration-200 group-hover:hidden text-white font-bold text-[23px] leading-none"
+            >
+              Nutrition Education and Counseling Program
+            </h1>
+            <p
+              class="text-center text-md duration-200 hidden group-hover:block"
+            >
+              Discover the joy of personalized meal plans meticulously crafted
+              to align with your dietary preferences, health objectives, and
+              nutritional requirements.
+            </p>
+          </div>
+          <div
+            class="flex group duration-200 items-center py-16 px-5 justify-center flex-col gap-6 rounded-2xl hover:bg-yellow-500"
+          >
+            <img
+              class="h-12 w-12 object-cover duration-200 block group-hover:hidden"
+              src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65e8753c8e2a3c924d137a92_la_gem-solid.svg"
+              alt=""
+            />
+            <h1
+              class="text-center block duration-200 group-hover:hidden text-white font-bold text-[23px] leading-none"
+            >
+              Weight Management Program Enhancement
+            </h1>
+            <p
+              class="text-center text-md duration-200 hidden group-hover:block"
+            >
+              Discover the joy of personalized meal plans meticulously crafted
+              to align with your dietary preferences, health objectives, and
+              nutritional requirements.
+            </p>
+          </div>
+          <div
+            class="flex group duration-200 items-center py-16 px-5 justify-center flex-col gap-6 rounded-2xl hover:bg-yellow-500"
+          >
+            <img
+              class="h-12 w-12 object-cover duration-200 block group-hover:hidden"
+              src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65f82bd11e679c07953467f8_la_gem-solid.png"
+              alt=""
+            />
+            <h1
+              class="text-center block duration-200 group-hover:hidden text-white font-bold text-[23px] leading-none"
+            >
+              Gut Health and Digestive Wellness Program
+            </h1>
+            <p
+              class="text-center text-md duration-200 hidden group-hover:block"
+            >
+              Discover the joy of personalized meal plans meticulously crafted
+              to align with your dietary preferences, health objectives, and
+              nutritional requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section class="w-full py-20 px-10 bg-[#8339FE]">
+        <div class="flex items-center justify-center gap-6">
+          <img
+            class="h-12 w-12 object-cover"
+            src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef42bf74f3ac878a6163be_la_gem-solidtesti.svg"
+            alt=""
+          />
+          <h1 class="text-white text-3xl font-bold">What Our Clients Say</h1>
+        </div>
+
+        <!-- users -->
+
+        <div class="swiper mySwiper py-20">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="pt-20 pb-10 px-6 relative w-full bg-white rounded-3xl"
+              >
+                <div
+                  class="h-24 w-24 bg-gray-300 border-4 border-white rounded-full absolute left-1/2 -translate-x-1/2 -top-10 overflow-hidden z-30"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef5e3e88d9e5ddf0936bd3_pexels-andrea-piacquadio-774909%202.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text-center">
+                  "NutriCare is truly a game-changer. Their holistic approach to
+                  nutrition helped me break free from the dieting cycle and
+                  embrace a balanced, sustainable lifestyle. Thanks to
+                  NutriCare, I feel healthier, happier, and more confident in my
+                  own skin."
+                </p>
+                <h1 class="font-bold text-2xl text-[#8339FE] mt-10 text-center">
+                  Emma R.
+                </h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="pt-20 pb-10 px-6 relative w-full bg-white rounded-3xl"
+              >
+                <div
+                  class="h-24 w-24 bg-gray-300 border-4 border-white rounded-full absolute left-1/2 -translate-x-1/2 -top-10 overflow-hidden z-30"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef5e3e88d9e5ddf0936bd3_pexels-andrea-piacquadio-774909%202.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text-center">
+                  "NutriCare is truly a game-changer. Their holistic approach to
+                  nutrition helped me break free from the dieting cycle and
+                  embrace a balanced, sustainable lifestyle. Thanks to
+                  NutriCare, I feel healthier, happier, and more confident in my
+                  own skin."
+                </p>
+                <h1 class="font-bold text-2xl text-[#8339FE] mt-10 text-center">
+                  Emma R.
+                </h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="pt-20 pb-10 px-6 relative w-full bg-white rounded-3xl"
+              >
+                <div
+                  class="h-24 w-24 bg-gray-300 border-4 border-white rounded-full absolute left-1/2 -translate-x-1/2 -top-10 overflow-hidden z-30"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef5e3e88d9e5ddf0936bd3_pexels-andrea-piacquadio-774909%202.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text-center">
+                  "NutriCare is truly a game-changer. Their holistic approach to
+                  nutrition helped me break free from the dieting cycle and
+                  embrace a balanced, sustainable lifestyle. Thanks to
+                  NutriCare, I feel healthier, happier, and more confident in my
+                  own skin."
+                </p>
+                <h1 class="font-bold text-2xl text-[#8339FE] mt-10 text-center">
+                  Emma R.
+                </h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="pt-20 pb-10 px-6 relative w-full bg-white rounded-3xl"
+              >
+                <div
+                  class="h-24 w-24 bg-gray-300 border-4 border-white rounded-full absolute left-1/2 -translate-x-1/2 -top-10 overflow-hidden z-30"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef5e3e88d9e5ddf0936bd3_pexels-andrea-piacquadio-774909%202.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text-center">
+                  "NutriCare is truly a game-changer. Their holistic approach to
+                  nutrition helped me break free from the dieting cycle and
+                  embrace a balanced, sustainable lifestyle. Thanks to
+                  NutriCare, I feel healthier, happier, and more confident in my
+                  own skin."
+                </p>
+                <h1 class="font-bold text-2xl text-[#8339FE] mt-10 text-center">
+                  Emma R.
+                </h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="pt-20 pb-10 px-6 relative w-full bg-white rounded-3xl"
+              >
+                <div
+                  class="h-24 w-24 bg-gray-300 border-4 border-white rounded-full absolute left-1/2 -translate-x-1/2 -top-10 overflow-hidden z-30"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef5e3e88d9e5ddf0936bd3_pexels-andrea-piacquadio-774909%202.png"
+                    alt=""
+                  />
+                </div>
+                <p class="text-center">
+                  "NutriCare is truly a game-changer. Their holistic approach to
+                  nutrition helped me break free from the dieting cycle and
+                  embrace a balanced, sustainable lifestyle. Thanks to
+                  NutriCare, I feel healthier, happier, and more confident in my
+                  own skin."
+                </p>
+                <h1 class="font-bold text-2xl text-[#8339FE] mt-10 text-center">
+                  Emma R.
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- navigations -->
+        <div class="flex items-center justify-center gap-4">
+          <div
+            class="h-10 group left_arrow transition-all duration-200 hover:bg-transparent hover:border-2 border-white w-10 rounded-full flex items-center cursor-pointer justify-center bg-white"
+          >
+            <i
+              class="ri-arrow-left-s-line text-3xl text-[#8339FE] group-hover:text-white"
+            ></i>
+          </div>
+          <div
+            class="h-10 group right_arrow transition-all duration-200 hover:bg-transparent hover:border-2 border-white w-10 rounded-full flex items-center cursor-pointer justify-center bg-white"
+          >
+            <i
+              class="ri-arrow-right-s-line text-3xl text-[#8339FE] group-hover:text-white"
+            ></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-20 w-full bg-[#F9F1FD]">
+        <div class="flex items-center justify-center gap-6">
+          <img
+            class="h-12 w-12 object-cover"
+            src="https://assets-global.website-files.com/65e7eab6796a4c5dd71c7afd/65ef464d4398e0804b899168_la_gem-solidfaq.svg"
+            alt=""
+          />
+          <h1 class="text-[#6D549F] text-3xl font-bold">
+            Frequently Asked Questions
+          </h1>
+        </div>
+
+        <div
+          class="border-4 transition-all ease-linear faq border-gray-100 hover:shadow-xl hover:shadow-pink-100 w-[70%] mx-auto mt-10 h-16 overflow-hidden bg-white rounded-2xl flex flex-col justify-start px-4"
+        >
+          <div class="flex h-16 mt-3 mb-3 items-center justify-between">
+            <h1 class="text-[#6D549F] font-bold text-xl">
+              How does NutriCare personalize nutrition plans?
+            </h1>
+            <i
+              class="ri-add-fill plus_icon transition-all ease-linear duration-200 text-[#8339FE] font-bold text-2xl cursor-pointer"
+            ></i>
+          </div>
+          <p class="pb-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            perspiciatis, earum accusantium quidem vero rem, alias repellat
+            consequuntur rerum commodi veniam modi facere veritatis itaque
+            reiciendis ab. Suscipit ducimus hic adipisci ea? lorem100
+          </p>
+        </div>
+
+        <div
+          class="border-4 transition-all ease-linear faq border-gray-100 hover:shadow-xl hover:shadow-pink-100 w-[70%] mx-auto mt-10 h-16 overflow-hidden bg-white rounded-2xl flex flex-col justify-start px-4"
+        >
+          <div class="flex h-16 mt-3 mb-3 items-center justify-between">
+            <h1 class="text-[#6D549F] font-bold text-xl">
+              How does NutriCare personalize nutrition plans?
+            </h1>
+            <i
+              class="ri-add-fill plus_icon transition-all ease-linear duration-200 text-[#8339FE] font-bold text-2xl cursor-pointer"
+            ></i>
+          </div>
+          <p class="pb-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            perspiciatis, earum accusantium quidem vero rem, alias repellat
+            consequuntur rerum commodi veniam modi facere veritatis itaque
+            reiciendis ab. Suscipit ducimus hic adipisci ea? lorem100
+          </p>
+        </div>
+        <div
+          class="border-4 transition-all ease-linear faq border-gray-100 hover:shadow-xl hover:shadow-pink-100 w-[70%] mx-auto mt-10 h-16 overflow-hidden bg-white rounded-2xl flex flex-col justify-start px-4"
+        >
+          <div class="flex h-16 mt-3 mb-3 items-center justify-between">
+            <h1 class="text-[#6D549F] font-bold text-xl">
+              How does NutriCare personalize nutrition plans?
+            </h1>
+            <i
+              class="ri-add-fill plus_icon transition-all ease-linear duration-200 text-[#8339FE] font-bold text-2xl cursor-pointer"
+            ></i>
+          </div>
+          <p class="pb-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            perspiciatis, earum accusantium quidem vero rem, alias repellat
+            consequuntur rerum commodi veniam modi facere veritatis itaque
+            reiciendis ab. Suscipit ducimus hic adipisci ea? lorem100
+          </p>
+        </div>
+        <div
+          class="border-4 transition-all ease-linear faq border-gray-100 hover:shadow-xl hover:shadow-pink-100 w-[70%] mx-auto mt-10 h-16 overflow-hidden bg-white rounded-2xl flex flex-col justify-start px-4"
+        >
+          <div class="flex h-16 mt-3 mb-3 items-center justify-between">
+            <h1 class="text-[#6D549F] font-bold text-xl">
+              How does NutriCare personalize nutrition plans?
+            </h1>
+            <i
+              class="ri-add-fill plus_icon transition-all ease-linear duration-200 text-[#8339FE] font-bold text-2xl cursor-pointer"
+            ></i>
+          </div>
+          <p class="pb-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            perspiciatis, earum accusantium quidem vero rem, alias repellat
+            consequuntur rerum commodi veniam modi facere veritatis itaque
+            reiciendis ab. Suscipit ducimus hic adipisci ea? lorem100
+          </p>
+        </div>
+        <div
+          class="border-4 transition-all ease-linear faq border-gray-100 hover:shadow-xl hover:shadow-pink-100 w-[70%] mx-auto mt-10 h-16 overflow-hidden bg-white rounded-2xl flex flex-col justify-start px-4"
+        >
+          <div class="flex h-16 mt-3 mb-3 items-center justify-between">
+            <h1 class="text-[#6D549F] font-bold text-xl">
+              How does NutriCare personalize nutrition plans?
+            </h1>
+            <i
+              class="ri-add-fill plus_icon transition-all ease-linear duration-200 text-[#8339FE] font-bold text-2xl cursor-pointer"
+            ></i>
+          </div>
+          <p class="pb-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            perspiciatis, earum accusantium quidem vero rem, alias repellat
+            consequuntur rerum commodi veniam modi facere veritatis itaque
+            reiciendis ab. Suscipit ducimus hic adipisci ea? lorem100
+          </p>
+        </div>
+      </section>
+
       <!-- space -->
       <div class="h-96 w-full bg-white"></div>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
