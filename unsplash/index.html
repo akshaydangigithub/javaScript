@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    .image{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <main class="min-h-screen w-full bg-zinc-300">
+
+        <form class="pt-20 w-full form flex items-center justify-center">
+            <input type="text" class="py-2 ps-4 search-input pe-10 outline-none rounded-xl"
+                placeholder="Search Image...">
+            <button type="submit" class="py-2 px-5 bg-zinc-500 text-white font-bold rounded-xl ms-4">Search</button>
+        </form>
+
+        <div class="image-container gap-10 mt-12 px-20 grid grid-cols-4">
+            <!-- image will come here -->
+
+       </div>
+
+
+        <button class="load-more mt-10 py-2 px-4 bg-blue-500 text-white font-bold rounded-xl block mx-auto">
+            Load More
+        </button>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
